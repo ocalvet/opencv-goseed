@@ -1,6 +1,6 @@
 # SCRIPT OPTIONS
 OPENCV_VERSION=$OPENCV_VERSION    # Version to be installed
-# OPENCV_CONTRIB='NO'       # Install OpenCV's extra modules
+OPENCV_CONTRIB='YES'       # Install OpenCV's extra modules
 
 wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip
 unzip ${OPENCV_VERSION}.zip && rm ${OPENCV_VERSION}.zip

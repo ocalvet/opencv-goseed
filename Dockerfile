@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y libdc1394-22-dev libavcodec-dev libavfo
 RUN apt-get update && apt-get install -y libtbb-dev libeigen3-dev
 RUN apt-get update && apt-get install -y doxygen
 RUN apt-get update && apt-get install -y wget
-ENV OPENCV_VERSION=4.1.0
 RUN mkdir /scripts /app
+ENV OPENCV_VERSION=4.1.1
 ADD opencv_install.sh /scripts/opencv_install.sh
 RUN /bin/bash /scripts/opencv_install.sh
 ENV CGO_CPPFLAGS="-I/usr/local/include"

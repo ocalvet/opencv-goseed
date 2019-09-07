@@ -1,9 +1,22 @@
+// What it does:
+//
+// 	This program outputs the current OpenCV library version to the console.
+//
+// How to run:
+//
+// 		go run ./cmd/version/main.go
+//
+// +build example
+
 package main
 
 import (
-	"log"
+	"fmt"
+
+	"gocv.io/x/gocv"
 )
 
 func main() {
-	log.Println("There, there!")
+	fmt.Printf("gocv version: %s\n", gocv.Version())
+	fmt.Printf("opencv lib version: %s\n", gocv.OpenCVVersion())
 }
